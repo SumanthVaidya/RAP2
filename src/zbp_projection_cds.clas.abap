@@ -1,0 +1,5 @@
+CLASS zbp_projection_cds DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zprojection_cds.
+ENDCLASS.
+
+CLASS zbp_projection_cds IMPLEMENTATION.
+ENDCLASS.

@@ -1,0 +1,28 @@
+@Metadata.layer: #CORE
+annotate entity ZProjection_cds
+    with 
+{
+
+@UI.facet: [{ label: 'UI Facet,', type: #IDENTIFICATION_REFERENCE, position: 5  }]
+   @UI.lineItem: [{ position: 10, label: 'Saler Order ID' }]
+   @UI.identification: [{ position: 10 }]
+    SalesOrderId;
+    @UI.lineItem: [{ position: 20, label: 'Name' }]
+    @UI.identification: [{ position: 20 }]
+    Name;
+    @UI.lineItem: [{ position: 30, label: 'DocumentType' }]
+    @UI.identification: [{ position: 30 }]
+    DocumentType;
+    @UI.lineItem: [{ position: 40, label: 'CreatedBy' }]
+    @UI.identification: [{ position: 40 }]
+    CreatedBy;
+    @UI.lineItem: [{ position: 50, label: 'CreatedOn' }]
+    @UI.identification: [{ position: 50 }]
+    CreatedOn;
+    @UI.lineItem: [{ position: 60, label: 'Status' }]
+    @UI.identification: [{ position: 60 }]
+    @UI.selectionField: [{ position: 20 }]
+   // @UI.textArrangement: #TEXT_ONLY
+    Status;
+    
+}

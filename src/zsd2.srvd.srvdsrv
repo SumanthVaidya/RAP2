@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination'
+define service ZSD2 {
+  expose ZProjection_cds;
+}

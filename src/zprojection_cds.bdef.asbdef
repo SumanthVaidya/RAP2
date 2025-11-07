@@ -1,0 +1,23 @@
+managed implementation in class zbp_projection_cds unique;
+strict ( 2 );
+
+define behavior for ZProjection_cds alias projection_view
+persistent table zdb_table
+lock master
+authorization master ( instance )
+etag master CreatedOn
+{
+  create ( authorization : global );
+  update;
+  delete;
+ // field ( readonly ) SalesOrderId;
+
+  mapping for zdb_table{
+  SalesOrderId = sales_order_id;
+  Name = name;
+  DocumentType = document_type;
+  CreatedOn = created_on;
+  CreatedBy =  created_by;
+  Status = status;
+  }
+}

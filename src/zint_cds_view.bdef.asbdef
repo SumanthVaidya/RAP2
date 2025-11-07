@@ -1,0 +1,24 @@
+managed implementation in class zbp_int_cds_view unique;
+strict ( 2 );
+
+define behavior for ZINT_CDS_view alias cdsview
+persistent table zdb_table
+lock master
+authorization master ( instance )
+etag master CreatedOn
+{
+  create ( authorization : global );
+  update;
+  delete;
+ // field ( readonly ) SalesOrderId;
+
+  mapping for zdb_table{
+  SalesOrderId = sales_order_id;
+  Name = name;
+  DocumentType = document_type;
+  CreatedOn = created_on;
+  CreatedBy =  created_by;
+  Status = status;
+
+  }
+}
